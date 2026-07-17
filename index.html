@@ -573,6 +573,8 @@
     <p class="hero-skills-label">Core technologies</p>
     <div class="skill-pills">
       <span class="pill">AWS</span>
+      <span class="pill">Java</span>
+      <span class="pill">python</span>
       <span class="pill">Kubernetes</span>
       <span class="pill">Docker</span>
       <span class="pill">Terraform</span>
@@ -580,7 +582,6 @@
       <span class="pill">REST APIs</span>
       <span class="pill">Cosmos NoSQL</span>
       <span class="pill">CI/CD</span>
-      <span class="pill">Java</span>
       <span class="pill">C#</span>
       <span class="pill">JavaScript</span>
     </div>
@@ -617,28 +618,29 @@
         <div class="exp-role">Software Engineer II — Disney Entertainment & ESPN</div>
         <div class="exp-meta">June 2024 – Present</div>
         <ul class="exp-bullets">
-          <li>Owned cross-team feature for managing and enforcing user privacy consent settings across Disney+ and Hulu applications</li>
-          <li>Engineered a unified AWS data platform to capture, store, and enrich user activity data for Disney+ and Hulu, standardizing practices across 10 cross-functional teams</li>
-          <li>Optimized data pipelines to support marketing initiatives, improve ads targeting, and elevate in-app user experiences</li>
+          <li>Owned an end-to-end backend engineering infra project (Claude Code, Cursor) that batch-publishes 1M+ live streaming events/day on AWS S3 instead of Kinesis — cutting costs 30% with cross-org adoption (5+ sister teams)</li>
+          <li>Built agentic AI skills and MCP servers that streamline team workflows and on-call rotations; recognized as an org-wide leader in AI adoption and knowledge-sharing (10+ teams)</li>
+          <li>Engaged in a cross-org initiative enforcing user privacy-consent settings across Disney+ and Hulu, strengthening compliance with regulatory privacy standards (entire Disney data catalog)</li>
+          <li>Drove design of a new Event-data Platform capturing, storing, standardizing, and enriching user-activity data</li>
+          <li>Optimized 100+ data pipelines with the marketing org to sharpen ad targeting and elevate in-app user experiences</li>
         </ul>
       </div>
       <div class="exp-panel" id="exp-microsoft">
         <div class="exp-role">Software Engineer — Azure Edge & Platform Backend</div>
         <div class="exp-meta">January 2022 – June 2024</div>
         <ul class="exp-bullets">
-          <li>Deprecated a 20-year on-prem legacy system and implemented a new overlaying RESTful API library using Visual Studio .NET integration</li>
-          <li>Built and maintained the Build Artifacts microservice using Azure DevOps CI/CD pipelines</li>
-          <li>Collaborated across teams to integrate databases, message queues, and cloud services into distributed system architecture</li>
-          <li>Optimized Cosmos NoSQL indexing and partitioning strategies, cutting query times and improving service database performance</li>
-          <li>Managed critical incidents in a 24/7 on-call rotation, reducing response times and ensuring service excellence</li>
+          <li>Replaced a 20-year-old on-prem legacy storage system with a new RESTful API library (.NET), improving security and serving data faster to users</li>
+          <li>Co-built and maintained the Build Artifacts microservice on a 10-person team using Azure DevOps CI/CD pipelines</li>
+          <li>Integrated databases, message queues, and cloud services into a distributed system architecture across functional teams</li>
+          <li>Resolved critical incidents in a 24/7 on-call rotation, reducing response times and sustaining operational excellence</li>
         </ul>
         <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);">
           <div class="exp-role" style="font-size: 1rem;">Software Engineering Intern — Azure Edge & Platform Windows Debugger</div>
           <div class="exp-meta">June – September 2021</div>
           <ul class="exp-bullets">
-            <li>Contributed to WinDbg Time Travel Debugging Automated Replay Feature, saving significant manual debugging overhead</li>
-            <li>Programmed code execution recording and replaying capabilities; maintained and enhanced automated test cases</li>
-            <li>Scaled the Time Travel Debugging microservice horizontally, expanding it into a SaaS for org-wide integration</li>
+            <li>Built the Automated Replay feature for WinDbg Time Travel Debugging, eliminating manual debugging time and overhead by 50% cross-org</li>
+            <li>Programmed code-execution recording and replay; enhanced automated test suites and deployment procedures</li>
+            <li>Scaled the Windows Time Travel Debugging microservice into an org-wide SaaS offering</li>
           </ul>
         </div>
       </div>
@@ -646,18 +648,17 @@
         <div class="exp-role">Software Engineering Intern — Consumer-Supplier Management</div>
         <div class="exp-meta">June – August 2020</div>
         <ul class="exp-bullets">
-          <li>Developed an in-house interactive web app for the Supplier Management Team using the PowerApps platform with HTML/CSS design</li>
-          <li>Boosted workflow automation by 50% through Azure Cloud Services for efficient internal service information retrieval</li>
-          <li>Managed priorities and deliverables in an Agile environment, ensuring consistent weekly development cycles</li>
+          <li>Built an internal web app for the Supplier Management team using PowerApps with HTML/CSS</li>
+          <li>Automated workflows ~50% via Azure Cloud Services for faster internal data retrieval</li>
+          <li>Delivered weekly in an Agile environment, managing priorities and non-functional requirements (reliability, performance, security)</li>
         </ul>
       </div>
       <div class="exp-panel" id="exp-uw">
-        <div class="exp-role">Computer Science Tutor — Qualitative Skills Center</div>
+        <div class="exp-role">Computer Science Tutor — Quantitative Skills Center</div>
         <div class="exp-meta">August 2020 – December 2021 · University of Washington</div>
         <ul class="exp-bullets">
-          <li>Supported CS students with assignments, exam reviews, and projects through 1:1 sessions on data structures and OOP</li>
-          <li>Modeled effective learning strategies including time management and prioritization to enhance academic performance</li>
-          <li>Assisted peers in utilizing quantitative software such as Excel, SPSS, and MATLAB</li>
+          <li>Tutored CS students in data structures and object-oriented programming through 1:1 sessions, exam reviews, and project support</li>
+          <li>Coached peers on quantitative tools (Excel, SPSS, MATLAB) and effective study and time-management strategies</li>
         </ul>
       </div>
     </div>
@@ -671,6 +672,16 @@
     <h2 class="section-title">Projects</h2>
   </div>
   <div class="projects-grid fade-up">
+    <div class="project-card">
+      <div class="project-name">Points & Travel Suite</div>
+      <div class="project-event">Claude Code-powered travel advisor portal</div>
+      <p class="project-desc">Built a credit-card-points travel advisor with Claude Code and Supabase, including a flight seat-exchange marketplace. Integrated the Anthropic API to generate hotel and business-class award redemption recommendations from users' loyalty-program inputs.</p>
+      <div class="project-tags">
+        <span class="project-tag">Claude Code</span>
+        <span class="project-tag">Anthropic API</span>
+        <span class="project-tag">Supabase</span>
+      </div>
+    </div>
     <div class="project-card">
       <div class="project-name">Prompt Wizard</div>
       <div class="project-event">Microsoft 2023 Hackathon</div>
@@ -723,15 +734,15 @@
       <p class="edu-skills-title">Technical skills</p>
       <div class="skills-block">
         <div class="skills-category">Languages</div>
-        <div class="skills-list">Java · C# · JavaScript · HTML · CSS</div>
+        <div class="skills-list">Java · python · C# · JavaScript · HTML · CSS</div>
       </div>
       <div class="skills-block">
         <div class="skills-category">Tech Stacks</div>
-        <div class="skills-list">AWS · Kubernetes · Docker · Terraform · DevOps CI/CD · GraphQL · RESTful Development · Git</div>
+        <div class="skills-list">AWS · Maven · SpringBoot · Kubernetes · Docker · Terraform · DevOps CI/CD · GraphQL · RESTful Development · Git</div>
       </div>
       <div class="skills-block">
         <div class="skills-category">Databases</div>
-        <div class="skills-list">Cosmos NoSQL · Microsoft SQL Server · DynamoDB</div>
+        <div class="skills-list">Databricks · Cosmos NoSQL · Microsoft SQL Server · Kusto · DynamoDB</div>
       </div>
     </div>
   </div>
@@ -747,7 +758,7 @@
   <div class="contact-links fade-up">
     <a href="mailto:jessica.nguyen0107@gmail.com" class="contact-item">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-      jessica.nguyen0107@gmail.com
+      jessica.nguyen.work.acct@gmail.com
     </a>
     <a href="tel:4255907314" class="contact-item">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
