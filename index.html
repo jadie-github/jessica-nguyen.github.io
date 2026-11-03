@@ -10,13 +10,17 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #F7F4EF;
-    --ink: #1A1614;
-    --muted: #6B6460;
-    --accent: #C4502A;
-    --accent-light: #EDE0D8;
-    --line: #D8D0C8;
-    --white: #FFFCF9;
+    --bg: #191919;
+    --surface: #1F1F1F;
+    --card: #262626;
+    --ink: #EDEDED;
+    --muted: #9B9A97;
+    --accent: #9C7FEF;
+    --accent-hover: #8A69E8;
+    --accent-light: rgba(156, 127, 239, 0.16);
+    --line: #373737;
+    --white: #FFFFFF;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
   }
 
   html { scroll-behavior: smooth; }
@@ -554,7 +558,7 @@
   <div class="hero-right">
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">4+</div>
+        <div class="stat-num">5+</div>
         <div class="stat-label">Years experience</div>
       </div>
       <div class="stat">
@@ -572,18 +576,18 @@
     </div>
     <p class="hero-skills-label">Core technologies</p>
     <div class="skill-pills">
-      <span class="pill">AWS</span>
+      <span class="pill">LangGraph</span>
+      <span class="pill">MCP</span>
+      <span class="pill">Claude Code</span>
+      <span class="pill">OpenAI</span>
       <span class="pill">Java</span>
-      <span class="pill">python</span>
+      <span class="pill">Python</span>
+      <span class="pill">PyTorch</span>
+      <span class="pill">AWS</span>
+      <span class="pill">Azure</span>
       <span class="pill">Kubernetes</span>
-      <span class="pill">Docker</span>
-      <span class="pill">Terraform</span>
-      <span class="pill">GraphQL</span>
-      <span class="pill">REST APIs</span>
-      <span class="pill">Cosmos NoSQL</span>
-      <span class="pill">CI/CD</span>
-      <span class="pill">C#</span>
-      <span class="pill">JavaScript</span>
+      <span class="pill">FastAPI</span>
+      <span class="pill">Databricks</span>
     </div>
   </div>
 </section>
@@ -615,15 +619,24 @@
     </div>
     <div class="exp-content">
       <div class="exp-panel active" id="exp-disney">
-        <div class="exp-role">Software Engineer II — Disney Entertainment & ESPN</div>
-        <div class="exp-meta">June 2024 – Present</div>
+        <div class="exp-role">AI/ML Software Engineer II — Disney AI & Observability</div>
+        <div class="exp-meta">June 2026 – Present</div>
         <ul class="exp-bullets">
-          <li>Owned an end-to-end backend engineering infra project (Claude Code, Cursor) that batch-publishes 1M+ live streaming events/day on AWS S3 instead of Kinesis — cutting costs 30% with cross-org adoption (5+ sister teams)</li>
-          <li>Built agentic AI skills and MCP servers that streamline team workflows and on-call rotations; recognized as an org-wide leader in AI adoption and knowledge-sharing (10+ teams)</li>
-          <li>Engaged in a cross-org initiative enforcing user privacy-consent settings across Disney+ and Hulu, strengthening compliance with regulatory privacy standards (entire Disney data catalog)</li>
-          <li>Drove design of a new Event-data Platform capturing, storing, standardizing, and enriching user-activity data</li>
-          <li>Optimized 100+ data pipelines with the marketing org to sharpen ad targeting and elevate in-app user experiences</li>
+          <li>Owned a LangGraph-powered RCA analysis tool used by 1,000+ teams to identify root causes and recommend remediation; reduced on-call time by 50% and prevented 90% of Sev-0 incidents in one quarter</li>
+          <li>Improved an in-house MCP model backed by GPT-4o, drawing on 1M+ live events across 11 telemetry sources to detect anomalies and provide incident management for 6,000+ downstream microservices</li>
+          <li>Drove design of a Semantic Search Service, a GraphQL platform for intelligent cross-source discovery of 1M+ customer feedback items across Reddit, TikTok, and the App Store to improve Disney+</li>
         </ul>
+        <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);">
+          <div class="exp-role" style="font-size: 1rem;">Software Engineer II — Disney Streaming</div>
+          <div class="exp-meta">June 2024 – June 2026</div>
+          <ul class="exp-bullets">
+            <li>Owned a streaming engineering infrastructure project for Disney+ and Hulu that batch-publishes 1M+ live events per day to AWS S3 instead of Kinesis, cutting costs by 30% with adoption by 5+ sister teams</li>
+            <li>Built agentic AI skills and MCP servers that streamline team workflows and on-call rotations; recognized as an org-wide leader in AI adoption and knowledge-sharing across 10+ teams</li>
+            <li>Contributed to a cross-org initiative enforcing user privacy-consent settings across streaming apps in 190+ countries, strengthening regulatory compliance across the Disney data catalog</li>
+            <li>Drove design of a new Event-data Platform capturing, storing, standardizing, and enriching user-activity data</li>
+            <li>Optimized 100+ data pipelines with the marketing org to sharpen ad targeting and elevate in-app user experiences</li>
+          </ul>
+        </div>
       </div>
       <div class="exp-panel" id="exp-microsoft">
         <div class="exp-role">Software Engineer — Azure Edge & Platform Backend</div>
@@ -733,16 +746,20 @@
     <div class="edu-right">
       <p class="edu-skills-title">Technical skills</p>
       <div class="skills-block">
+        <div class="skills-category">AI &amp; ML</div>
+        <div class="skills-list">Claude Code · Cursor · Amazon Q · Anthropic · OpenAI · MCP · LangGraph · LangChain</div>
+      </div>
+      <div class="skills-block">
         <div class="skills-category">Languages</div>
-        <div class="skills-list">Java · python · C# · JavaScript · HTML · CSS</div>
+        <div class="skills-list">Java · Python · C# · Spring Boot · PyTorch</div>
       </div>
       <div class="skills-block">
-        <div class="skills-category">Tech Stacks</div>
-        <div class="skills-list">AWS · Maven · SpringBoot · Kubernetes · Docker · Terraform · DevOps CI/CD · GraphQL · RESTful Development · Git</div>
+        <div class="skills-category">Cloud &amp; DevOps</div>
+        <div class="skills-list">AWS · Azure · Kubernetes · Docker · Terraform · CI/CD · RESTful APIs · Git · FastAPI</div>
       </div>
       <div class="skills-block">
-        <div class="skills-category">Databases</div>
-        <div class="skills-list">Databricks · Cosmos NoSQL · Microsoft SQL Server · Kusto · DynamoDB</div>
+        <div class="skills-category">Data</div>
+        <div class="skills-list">SQL · DynamoDB · MongoDB · Weaviate · Cosmos NoSQL · Microsoft Kusto · Databricks · Datadog</div>
       </div>
     </div>
   </div>
